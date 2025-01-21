@@ -9,6 +9,7 @@ if spec is None:
     print("Error: matplotlib not found")
 else:
     print("matplotlib found")
+    import matplotlib.pyplot as plt
 
 #from transformers import pipeline
 
