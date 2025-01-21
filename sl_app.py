@@ -3,14 +3,7 @@ import pandas as pd
 
 #import matplotlib.pyplot as plt
 
-import importlib.util
-spec = importlib.util.find_spec("matplotlib.pyplot")
-if spec is None:
-    print("Error: matplotlib not found")
-else:
-    plt = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(plt)
-    print("matplotlib found")
+import matplotlib as plt
 
 #from transformers import pipeline
 
