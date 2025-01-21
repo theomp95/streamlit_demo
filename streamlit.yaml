@@ -6,3 +6,4 @@ app_file: sl_app.py
 requirements_file: requirements.txt
 install_dependencies:
   - pip install matplotlib
+  - pip install transformers
