@@ -10,8 +10,14 @@ if spec is None:
 else:
     print("matplotlib found")
 
-from transformers import pipeline
+#from transformers import pipeline
 
+import importlib.util
+spec = importlib.util.find_spec("transformers")
+if spec is None:
+    print("Error: transformers not found")
+else:
+    print("transformers found")
 
 #create tabs
 demo1, demo2, demo3 = st.tabs(["Tab 1: Simple Demo", "Tab 2: Inputs Demo", "Tab 3: Chatbot Demo"])
