@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+
+#import matplotlib.pyplot as plt
+
+import importlib.util
+spec = importlib.util.find_spec("matplotlib")
+if spec is None:
+    print("Error: matplotlib not found")
+else:
+    print("matplotlib found")
+
 from transformers import pipeline
 
 
