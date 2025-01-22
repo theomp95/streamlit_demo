@@ -1,5 +1,5 @@
 streamlit
 pandas
-matplotlib
+matplotlib==3.6.0
 transformers
 torch
